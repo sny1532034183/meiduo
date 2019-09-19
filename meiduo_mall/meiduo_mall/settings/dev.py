@@ -15,7 +15,7 @@ import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0,os.path.join(BASE_DIR,"apps"))
+sys.path.insert(0,os.path.join(BASE_DIR,'apps'))
 
 
 # Quick-start development settings - unsuitable for production
@@ -27,7 +27,7 @@ SECRET_KEY = 'kx8j6+s8s&36top*k+unvxb*j)f&(%ovnnzovj!hih16b+)ry-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,14 +39,25 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users',
+    'users.apps.UsersConfig',
+    'oauth.apps.OauthConfig',
+    "addersses.apps.AdderssesConfig",
+    "goods.apps.GoodsConfig",
+    "contents.apps.ContentsConfig",
+    "carts.apps.CartsConfig",
+    "orders.apps.OrdersConfig",
+    "payment.apps.PaymentConfig",
+    "django_crontab",
+    "sinaoauth.apps.SinaoauthConfig"
+
+
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -101,17 +112,27 @@ WSGI_APPLICATION = 'meiduo_mall.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
-
+#
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # 数据库引擎
         'HOST': '192.168.229.129', # 数据库主机
         'PORT': 3306, # 数据库端口
-        'USER': 'itcast', # 数据库用户名
-        'PASSWORD': '123456', # 数据库用户密码
+        'USER': 'root', # 数据库用户名
+        'PASSWORD': 'mysql', # 数据库用户密码
         'NAME': 'meiduo_mall' # 数据库名字
     },
+    'slave': { # 读（从机）
+            'ENGINE': 'django.db.backends.mysql',
+            'HOST': '192.168.229.129',
+            'PORT': 8306,
+            'USER': 'root',
+            'PASSWORD': 'mysql',
+            'NAME': 'meiduo_mall'
+        }
 }
+
+DATABASE_ROUTERS = ['meiduo_mall.utils.db_router.MasterSlaveDBRouter']
 
 CACHES = {
     "default": { # 默认
@@ -124,6 +145,28 @@ CACHES = {
     "session": { # session
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    "verify_code": { # 验证码
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    'history':
+            { # 浏览历史记录
+            "BACKEND": "django_redis.cache.RedisCache",
+            "LOCATION": "redis://127.0.0.1:6379/3",
+            "OPTIONS": {
+                "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            }
+        },
+    "carts": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/4",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -213,3 +256,49 @@ LOGGING = {
         },
     }
 }
+
+#指定本项目用户模型类
+AUTH_USER_MODEL = 'users.User'
+AUTHENTICATION_BACKENDS = [
+    'users.utils.UserUtils',
+]
+
+# QQ的配置连接信息
+QQ_CLIENT_ID = '101518219'
+QQ_CLIENT_SECRET = '418d84ebdc7241efb79536886ae95224'
+QQ_REDIRECT_URI = 'http://www.meiduo.site:8000/oauth_callback'
+
+# login_requiredh装饰器指定验证用户未登录引导跳转的路径
+LOGIN_URL = '/login/'
+# 邮箱服务配置
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # 指定邮件后端
+EMAIL_HOST = 'smtp.163.com' # 发邮件主机
+EMAIL_PORT = 25 # 发邮件端口
+EMAIL_HOST_USER = 'sunningyanaaa@163.com' # 授权的邮箱
+EMAIL_HOST_PASSWORD = 'meiduo45' # 邮箱授权时获得的密码，非注册登录密码
+EMAIL_FROM = '美多商城<sunningyanaaa@163.com>' # 发件人抬头
+
+# 邮箱验证链接
+EMAIL_VERIFY_URL = 'http://www.meiduo.site:8000/emails/verification/'
+
+# 指定自定义的Django文件存储类
+DEFAULT_FILE_STORAGE = 'meiduo_mall.utils.fastdfs.fastdfsstorage.FastDFSStorage'
+FDFS_BASE_URL = 'http://image.meiduo.site:8888/'
+
+
+#支付宝SDK配置参数
+ALIPAY_APPID="2016101200664992"
+ALIAPY_DEBUG=True
+ALIPAY_URL='https://openapi.alipaydev.com/gateway.do?'
+ALIPAY_RETURN_URL= 'http://www.meiduo.site:8000/payment/status/'
+
+# CRONJOBS = [
+#     # 每1分钟生成一次首页静态文件
+#     ('*/2 * * * *', 'meiduo.meiduo_mall.meiduo_mall.apps.contents.static_html.get_index_static', '>> ' + os.path.join(os.path.dirname(BASE_DIR), 'logs/crontab.log'))
+# ]
+#
+# CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
+
+WEIBO_APP_ID = "1257032990"
+WEIBO_APP_KEY = "82f66ccb3c74cbebf2db84da169ab87e"
+WEIBO_REDIRECT_URI = 'http://www.meiduo.site:8000/sinaoauthcallback'

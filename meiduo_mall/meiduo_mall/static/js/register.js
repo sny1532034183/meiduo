@@ -20,7 +20,7 @@ var vm = new Vue({
         error_allow_message: '请勾选用户协议',
         image_code_id: '',
         image_code_url: '',
-        sms_code_tip: '获取短信验证码',
+        sms_code_tip: '发送短信验证码',
         sending_flag: false,
         username: '',
         password: '',
@@ -28,7 +28,8 @@ var vm = new Vue({
         mobile: '',
         image_code: '',
         sms_code: '',
-        allow: true
+        allow: true,
+        loginerror:''
     },
     mounted: function () {
         // 向服务器获取图片验证码
