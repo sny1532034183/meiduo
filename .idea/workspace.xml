@@ -1,7 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea588832-a8f3-4ced-9a6a-57a9d0ff9f59" name="Default Changelist" comment="" />
+    <list default="true" id="ea588832-a8f3-4ced-9a6a-57a9d0ff9f59" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/af14cd34-7906-4b97-a983-8048983cb468.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/meiduo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/celery_class.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/celery_tasks/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/celery_tasks/code_sms/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/celery_tasks/code_sms/tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/celery_tasks/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/celery_tasks/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/celery_tasks/yuntongxun/CCPRestSDK.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/celery_tasks/yuntongxun/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/celery_tasks/yuntongxun/sms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/celery_tasks/yuntongxun/xmltojson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/logs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/addersses/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/addersses/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/addersses/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/addersses/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/addersses/migrations/0002_address_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/addersses/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/addersses/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/addersses/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/addersses/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/addersses/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/carts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/carts/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/carts/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/carts/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/carts/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/carts/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/carts/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/carts/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/carts/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/contents/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/contents/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/contents/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/contents/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/contents/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/contents/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/contents/static_html.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/contents/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/contents/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/contents/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/contents/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/goods/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/goods/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/goods/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/goods/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/goods/migrations/0002_goodsvisitcount.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/goods/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/goods/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/goods/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/goods/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/goods/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/oauth/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/oauth/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/oauth/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/oauth/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/oauth/migrations/0002_oauthqquser_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/oauth/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/oauth/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/oauth/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/oauth/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/oauth/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/orders/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/orders/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/orders/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/orders/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/orders/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/orders/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/orders/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/orders/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/orders/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/payment/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/payment/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/payment/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/payment/keys/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/payment/keys/alipay_public_key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/payment/keys/app_private_key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/payment/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/payment/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/payment/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/payment/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/payment/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/payment/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/sinaoauth/OAuth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/sinaoauth/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/sinaoauth/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/sinaoauth/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/sinaoauth/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/sinaoauth/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/sinaoauth/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/sinaoauth/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/sinaoauth/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/sinaoauth/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/users/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/users/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/users/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/users/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/users/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/users/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/users/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/users/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/users/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/verifications/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/verifications/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/verifications/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/verifications/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/verifications/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/verifications/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/verifications/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/apps/verifications/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/libs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/libs/captcha/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/libs/captcha/captcha.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/libs/captcha/fonts/Arial.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/libs/captcha/fonts/Georgia.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/libs/captcha/fonts/actionj.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/libs/yuntongxun/CCPRestSDK.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/libs/yuntongxun/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/libs/yuntongxun/sms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/libs/yuntongxun/xmltojson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/settings/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/settings/dev.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/settings/prod.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/css/jquery.pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/detail/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/QQ-weixin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/Weibo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/adv01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/adv02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/banner01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/banner02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/banner03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/bar_code.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/cat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/clock.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/clock.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/find-password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/goods/goods001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/goods/goods002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/goods/goods003.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/goods/goods004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/goods/goods005.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/goods/goods006.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/goods/goods007.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/goods/goods008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/goods/goods009.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/goods_450.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/icons02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/interval_line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/left_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/login_banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/logo02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/missing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/pay_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/pic_code.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/register_banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/shine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/shop_cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/slide01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/slide02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/slide03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/slide04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/stars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/images/time_count_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/axios-0.18.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/find_password.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/goods_judge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/host.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/jquery.pagination.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/oauth_callback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/order_success.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/place_order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/slide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/user_center_info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/user_center_order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/user_center_pass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/user_center_site.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/static/js/vue-2.5.16.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/find_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/goods_judge.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/img.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/oauth_callback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/order_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/pay_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/place_order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/search/indexes/goods/sku_text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/search/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/search_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/testajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/user_center_info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/user_center_order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/user_center_pass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/templates/user_center_site.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/utils/db_router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/utils/fastdfs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/utils/fastdfs/client.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/utils/fastdfs/fastdfsstorage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/utils/jinja2_env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/utils/middleware.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/utils/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/utils/static_html.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall/meiduo_mall/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test1/login1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/美多项目思路.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +278,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="340" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="178" />
     <option name="y" value="26" />
     <option name="width" value="1131" />
     <option name="height" value="696" />
@@ -44,12 +290,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -88,12 +335,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11860000" />
+    <option name="totallyTimeSpent" value="12680000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="340" y="26" width="1131" height="696" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11951447" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.09682299" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -107,7 +354,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32899627" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3020478" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -118,6 +365,38 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/demo_test1.py">
